@@ -3,6 +3,11 @@
 int GetRandom(int min, int max);
 int main(){
     int ran,total = 0;
+    char name[10];
+    printf("What is your name?\n");
+    printf("> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
     printf("Rolling dice...\n");
     for(int i=1; i<=2; i++){
         ran = GetRandom(1,6);
